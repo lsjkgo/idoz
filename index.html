@@ -20,8 +20,8 @@
 			align-items: center;
 		}
 		#div_top .rightBox p {
-			background-color: #1e57c7; 
-			width: 100px;
+			background-color: #0f1216; 
+			width: 120px;
 			height: 70%; 
 			border-radius: 15px; 
 			color: #fff;
@@ -66,7 +66,7 @@
 			width: 40%;
     margin-right: 15px;
     height: 100px;
-    background: #1e57c7;
+    background: #0f1216;
     color: white;
     border-radius: 20px;
 		}
@@ -102,13 +102,13 @@
 		   			</a>
 		   		</div>
 				<div class="rightBox">
-					<p>0x27...c4Aa</p>
+					<p id="connect1" onclick="">connect wallet</p>
 					<div><img src="./img/wl.png" style="height: 40px;" onclick="qihuan()"></div>
 				</div>
 				<div class="selectBox">
 					<img src="./img/sj.png">
-					<p>English</p>
-					<p>中文简体</p>
+					<p onclick="chooseLang('en')">English</p>
+					<p onclick="chooseLang('cn')">中文简体</p>
 				</div>
 		   </div>
 		   <!---轮播图--->
@@ -154,7 +154,7 @@
 					<p data-locale="record">众筹记录</p></a>
 				</div>
 				<div class="handle">
-					<a href="#" style="text-align: center;text-decoration: none;
+					<a href="invter.html" style="text-align: center;text-decoration: none;
 					color: black;">
 					<div style="background-color: #3fa75b;">
 						<img src="./img/td.png">
@@ -208,6 +208,22 @@
 						<p>$ 0</p>
 					</button>
 		   </div>
+
+		   	   <!-- footer -->
+			   <div style="margin-bottom: 50px;">
+				<div class="footer-listing text-center mb-100 md-mb-70">
+                    <ul class="footer-icon-list">
+                        <!-- <li><a href="https://twitter.com/Colaswap_fi"><i class="icon-twitter"></i></a></li> -->
+                        <li><a href="s.denglianqiu.cn/+LFALdAvj2Qc3MWFl"><i class="icon-telegram"></i></a></li>
+                        <!-- <li><a href="https://discord.gg/z8a56hNB9Q"><i class="icon-discord"></i></a></li> -->
+                    </ul>
+                </div>
+                <div style="text-align: center;">
+                    <div class="dsc mb-37">Copyright © 2022. <a target="_blank" class="gafi" href="#" style="color: black;
+						text-decoration: none;">NCSOFT-DAO</a></div>
+                </div>
+			   </div>
+				 
 		   <!---功能栏---->
 		   <div id="div_statusBar">
 		   		<div id="div_statusBar1">
@@ -229,7 +245,7 @@
 		   		
 		   </div>
 		</div>
-		
+		<script src="assets/js/my.js"></script>
 		<script type="text/javascript" src="js/jquery.min.js?ver=3.5.1"></script>
 		<script type="text/javascript" src="js/jquery-migrate.min.js?ver=3.3.2"></script>
 		<script src='js/iqonic-custom.js?ver=1.0' id='iqonic-custom-js'></script>
@@ -238,35 +254,40 @@
 		<script type="text/javascript" src="js/NavigationBar.js"></script>
 		<script type="text/javascript" src="js/I18n/i18n.js"></script>
 		<script  type="text/javascript" src="js/lang.js"></script>
+		
 		<script>
-			let selectBox = document.querySelector('.selectBox')
+			
 			 var num1 = 0;
 			   var bool1 = true;
 			function qihuan(){
-				selectBox.style.display = 'flex'
+				let selectBox = document.querySelector('.selectBox')
+				
 			   if(num1%2 == 0){
 				   bool1 = true;
+				   selectBox.style.display = 'flex'
 			   }else{
 				   bool1 =false;
+				   selectBox.style.display = 'none'
 			   }
 			   if(bool1){
-				   chooseLang('cn')
+				//    chooseLang('cn')
 				   num1 = num1+1;
 			   }else{
-				   chooseLang('en')
+				//    chooseLang('en')
 				   num1 = num1+1;
 			   }
 			   
 			}
-			document.addEventListener('click',function(e){
-				if (e.target.src == 'http://127.0.0.1:5505/img/wl.png') {
-					
-				} else {
-					selectBox.style.display = 'none'
-				}
-				
-				
-        })
+		
+		   </script>
+		   <script>
+			window.onload = async function (){
+				initWallet("connect1");
+			}
+
+			function initC(){
+				initWallet("connect1");
+			}
 		   </script>
 	</body>
 </html>

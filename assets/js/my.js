@@ -1189,10 +1189,10 @@ window.onload = async function (){
             "type": "receive"
         }
     ]
-    let contractOne = new ethers.Contract("0x7EBFE5BF6122bbb93D5ceD2dC24c6DfFa2BA7Aac", abi, web3Provider);
+    let contractOne = new ethers.Contract("0xee82294fc476AE647e47070640B4929B988079e1", abi, web3Provider);
     var amountList = await contractOne.getMintNftRatioAmount();
-    var priceList = [1000,600,100,1000,600,100,10];
-    var fundList = [200000,240000,100000,200000,240000,100000,700000];
+    var priceList = [3000,1000,600,100,1000,600,100,10];
+    var fundList = [84000,200000,240000,100000,200000,240000,100000,816000];
     if(amountList.length>0){
         for(var i =0;i<amountList.length;i++){
             var uid = "#text"+(i+1);
@@ -1201,7 +1201,7 @@ window.onload = async function (){
             progress[0].innerHTML = num+" USDT / "+fundList[i]+" USDT";
         }
     }
-    
+    initWallet("select-address1");
    }
 
 async function initWallet(str) {
@@ -1778,7 +1778,7 @@ async function approve(){
     }
     let contract = new ethers.Contract("0x3d3981b1c3dae91bCF31F4620f48B7c226B11126", approveabi, walletWithProvider);
     try {
-        var approve = await contract.approve("0x7EBFE5BF6122bbb93D5ceD2dC24c6DfFa2BA7Aac","100000000000000000000000000");
+        var approve = await contract.approve("0xee82294fc476AE647e47070640B4929B988079e1","100000000000000000000000000");
         await approve.wait(); 
     } catch (error) {
         loadingStop();
@@ -3316,7 +3316,7 @@ async function claim(str) {
      var amount = inputPrivatekeyNew.val();
      var totalUsdtAmount = 0;
      var price = 0;
-     var priceList = [1000,600,100,1000,600,100,10];
+     var priceList = [3000,1000,600,100,1000,600,100,10];
      var rarity = 0;
      if(str == "#buyinput1"){
         price = priceList[0];
@@ -3339,6 +3339,9 @@ async function claim(str) {
      }else if(str == "#buyinput7"){
         price = priceList[6];
         rarity = 7;
+     }else if(str == "#buyinput8"){
+        price = priceList[7];
+        rarity = 8;
      }
      totalUsdtAmount = price*amount;
      let amountNew = ethers.utils.parseEther(totalUsdtAmount+"");
@@ -3348,7 +3351,7 @@ async function claim(str) {
         Dreamer.error("Your USDT is not enough",2000);
          return;
      }
-    let contract = new ethers.Contract("0x7EBFE5BF6122bbb93D5ceD2dC24c6DfFa2BA7Aac", abi, walletWithProvider);
+    let contract = new ethers.Contract("0xee82294fc476AE647e47070640B4929B988079e1", abi, walletWithProvider);
     try {
         if(invinteAdr&&invinteAdr.slice(0,2)=="0x"){
             var claim = await contract.idoBLC(invinteAdr,amount,rarity);
