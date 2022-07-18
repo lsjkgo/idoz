@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8" />
+    <title>NCSOFT-DAO-IDO</title>
+    <meta name="description" content="" />
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link href="assets/css/loading.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png" />
+    <!-- Bootstrap v4.4.1 css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <!-- animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <!-- magnific css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css" />
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" />
+    <!-- off canvas css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css" />
+    <!-- flaticon css  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/ico-moon-fonts.css" />
+    <!-- spacing css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/sc-spacing.css" />
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+  
+   
+</head>
+<style> 
+    /* 去除标签自带的margin和padding */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td{margin:0;padding:0} 
+/* 去除a标签默认样式 */
+a{text-decoration:none}
+/* i使斜体的文字正常 em使强调的内容正常 */
+em,i{font-style:normal;}
+strong,b{font-weight: 100;}
+/* 去除li元素默认的小圆点 */
+li{list-style:none}
+/* 去除图片的margin和padding */
+img{display: block;} 
+/* 设置单元格为单线样式 */
+table{border-collapse:collapse;border-spacing:0}
+/* 首行缩进连两个单位 */
+.indent{text-indent:2em;}
+.noborder{border:0;}
+/* 省略号 */
+.ellipsis{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+/* 清除浮动 */
+.clear::after{content:"." ;display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
+    .TotalRisedProgressHeadings p,
+    .TotalRisedProgressHeadings p,
+    .TotalRisedProgressHeadings h3 span,
+    .TotalRisedProgressHeadings h3,
+    .First_Survivor_CityLeft_Timer .price-counter ul li,
+    .ProjectDetails2_Section,.TotalRisedProgresSaleAirdropSect p,
+    .Access_Allocation_ParticipantsSect ul li span,
+    .Access_Allocation_ParticipantsSect ul li p,
+    .icon-telegram:before,
+    .icon-twitter:before,
+    .icon-discord:before,
+    .icon-world:before,
+    .First_Survivor_CityRight_ProjectName h2 a,
+    .First_Survivor_CityRight_ProjectName span,
+    .First_Survivor_CityRightSection p,
+    .First_Survivor_CityRight_Button button,
+    .PoolAndTokenInfo_card h2,
+    .PoolAndTokenInfo_List ul li p.PoolAndTokenInfo_List_left,
+    .PoolAndTokenInfo_List ul li p.PoolAndTokenInfo_ListRight,
+    .ProjectDetails2_AllocationsTableSect h2,
+    .ProjectDetails2_AllocationsTableHeadings ul li,
+    .ProjectDetails2_AllocationsTableBody ul li,
+    .ProjectDetails2_AllocationsTableBody ul li.column_5 button,
+    h1, h2, h3, h4, h5, h6,
+    html, body,
+    .sec-heading .sub-title,
+    .white-color,
+    .gamfi-footer-section .copyright-area .gafi,
+    .scrollup i {
+        color: #000!important;
+    }
+    .TotalRisedProgressBg,
+    .TotalRisedProgresSaleAirdropSect p:after {
+        background-color: rgb(14 13 13 / 72%);
+    }
+    .First_Survivor_CityRight_Button button.participateBtn,
+    .First_Survivor_CityRight_Button button.WHITELISbtn {
+        background-color: #1e57c7;
+        color: #fff;
+    }
+    .First_Survivor_CityLeftSection,
+    .PoolAndTokenInfo_card,
+    .ProjectDetails2_AllocationsTableHeadings ul {
+        background-color: #f8fafd;
+    }
+    .ProjectDetails2_AllocationsTableBody ul {
+        border-bottom: 1px solid rgba(10, 7, 7, 0.1);
+    }
+    .ProjectDetails2_AllocationsTableBody ul li.column_5 button {
+        background-color: rgb(28 22 22);
+        color: #fff;
+    }
+    .gamfi-footer-section {
+        background-color: #f8fafd!important;
+    }
+    .gamfi-footer-section .footer-cta-area {
+        background-color: #f8fafd!important;
+    }
+    .hover-shape-inner {
+        background-color: #f8fafd!important;
+    }
+    .active-shape .shadow-2, .hover-shape-border .shadow-2,
+    .active-shape .shadow-1, .hover-shape-border .shadow-1,
+    .active-shape .shadow-3, .hover-shape-border .shadow-3,
+    .active-shape .shadow-4, .hover-shape-border .shadow-4 {
+        width: 0;
+    }
+    .banner-btn {
+        background-color: rgb(28 22 22);
+        color: #fff;
+    }
+    .ProjectDetails2_AllocationsTableBody ul li.column_5 button {
+        color: #fff!important;
+    }
+    .gamfi-header-section .white-btn {
+        background-color: rgb(28 22 22);
+        color: #fff;
+    }
+    .First_Survivor_CityRight_Button button.participateBtn, .First_Survivor_CityRight_Button button.WHITELISbtn {
+        background-color: rgb(28 22 22);
+        color: #fff!important;
+    }
+    .PoolAndTokenInfo_Sect .rightBox {
+        padding: 30px;
+        background-color: #f8fafd;
+        border-radius: 50px;
+    }
+    .title p {
+        font-size: 21px;
+    }
+    .rightBtn button {
+        width: 128px;
+        height: 37px;
+        border-radius: 35px;
+        background-color: rgb(28 22 22); color: #fff;
+    }
+    .marginC{
+        margin-bottom: 30px;
+    }
+</style>
+
+<body>
+    <!--Preloader area start here-->
+    <section class="loader_first" style="display: none;">
+        <div class="circular-spinner"></div>
+    </section>
+    <!--Preloader area End here-->
+
+    <!--Header Start-->
+    <header id="gamfi-header" class="gamfi-header-section default-header">
+        <div class="menu-area menu-sticky sticky">
+            <div class="container">
+                <div class="heaader-inner-area d-flex justify-content-between align-items-center">
+                    <div class="gamfi-logo-area d-flex justify-content-between align-items-center">
+                        <div class="logo" style="z-index: 1000;">
+                            <a href="./index.html" target="_blank"><img src="assets/images/WechatIMG29.jpeg" alt="logo" href="./index.html"/></a>
+                        </div>
+                        <div class="header-menu">
+                            
+                        </div>
+                    </div>
+                    <div class="gamfi-btn-area">
+                        <ul>
+                            <li>
+                                <button type="button" class="readon white-btn hover-shape"  onclick="initWallet('select-address1')" id="select-address1">
+                                    Connect Wallet 
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Canvas Mobile Menu start -->
+        <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+            <div class="close-btn hash-has-sub">
+                <a id="nav-close2" class="nav-close hash">
+                    <div class="line">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-logo mb-30 hash-has-sub">
+                <a href="./index.html" class="hash"><img src="assets/images/logo.png" alt=""></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="current-menu-item has-sub hash-has-sub"><span class="submenu-button"><em></em></span><a href="index.html" class="hash">Home</a>
+                    <ul class="sub-menu" style="display: none;">
+                    </ul>
+                </li>
+                <li class="has-sub hash-has-sub"><span class="submenu-button"><em></em></span><a href="./index.html" class="hash">Projects</a>
+                    <ul class="sub-menu" style="display: none;">
+                    </ul>
+                </li>
+                <li class="has-sub hash-has-sub"><span class="submenu-button"><em></em></span><a href="./index.html" class="hash">Staking</a>
+                    <ul class="sub-menu" style="display: none;">
+                    </ul>
+                </li>
+                <li class="menu-item-has-children has-sub hash-has-sub"><span class="submenu-button"><em></em></span>
+                    <a href="#" class="hash">Pages</a>
+                    <ul class="sub-menu" style="display: none;">
+                        <li class="menu-item-has-children has-sub hash-has-sub"><span class="submenu-button"><em></em></span><a href="./index.html" class="hash">Projects Pages</a>
+                            <ul class="sub-menu" style="display: none;">
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children has-sub hash-has-sub"><span class="submenu-button"><em></em></span><a href="./index.html" class="hash">Stake &amp; Farm</a>
+                            <ul class="sub-menu" style="display: none;">
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children has-sub hash-has-sub"><span class="submenu-button"><em></em></span><a href="./index.html" class="hash">Other Pages</a>
+                            <ul class="sub-menu" style="display: none;">
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children has-sub hash-has-sub"><span class="submenu-button"><em></em></span><a href="./index.html" class="hash">Tokenomics &amp; Tier</a>
+                            <ul class="sub-menu" style="display: none;">
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children has-sub hash-has-sub"><span class="submenu-button"><em></em></span><a href="./index.html" class="hash">Blog &amp; Pages</a>
+                            <ul class="sub-menu" style="display: none;">
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children has-sub hash-has-sub"><span class="submenu-button"><em></em></span><a href="signin.html" class="hash">Auth Pages</a>
+                            <ul class="sub-menu" style="display: none;">
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children has-sub hash-has-sub"><span class="submenu-button"><em></em></span>
+                    <a href="#" class="hash">Buy Token</a>
+                    <ul class="sub-menu" style="display: none;">
+                    </ul>
+                </li>
+                <li>
+                    <button type="button" class="readon black-shape-big connectWalletBtnforMobile" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <span class="btn-text">Connect </span>
+                        <span class="hover-shape1"></span>
+                        <span class="hover-shape2"></span>
+                        <span class="hover-shape3"></span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <!-- Canvas Menu end -->
+    </header>
+    <!--Header End-->
+
+    <div class="ProjectDetails2_Section" style="background-color: #fff;">
+        <div class="ProjectDetails2Bg">
+           
+        </div>
+        <div class="container">
+            <div class="row flex-row-reverse marginC">
+                <div class="col-md-6">
+                    <div class="First_Survivor_CityRightSection">
+                        <div class="First_Survivor_CityRightHeadings">
+                            <div class="First_Survivor_CityRight_ProjectImg">
+                                <a href="index.html"><img src="assets/images/1.png" alt="img" class="img-fluid"></a>
+                            </div>
+                            <div class="First_Survivor_CityRight_ProjectName">
+                                <h2><a href="index.html">Human NFT IDO</a></h2>
+                                <span>price: 1 NFT =  1000 USDT</span>
+                            </div>
+                        </div>
+                        <p style="margin-bottom: 45px;">There are 200 human NFTs in total, with a price of 1000usdt each. Each NFT airdrops 1840 tokens, releasing 30% for the first time.</p>
+                        
+                        <div class="First_Survivor_CityRight_Button" style="flex-direction: column;">
+                            <div style="display: flex;margin-bottom: 15px;"><input id="buyinput1" type="text" style=" width: 70%;
+                                margin-right: 50px;
+                                border-radius: 8px;
+                                border: #070707 solid 2px;
+                                text-align: center;" placeholder="Buy NFT Amount">
+                                 <button class="participateBtn black-shape" onclick="claim('#buyinput1')">
+                                    Buy with USDT
+                                    <span class="hover-shape1"></span>
+                                    <span class="hover-shape2"></span>
+                                    <span class="hover-shape3"></span>
+                                </button></div>
+                           
+                                <!-- <div style="display: flex;">
+                                    <input id="linkinput" type="text" style=" width: 70%;
+                                    margin-right: 20px;
+                                    border-radius: 8px;
+                                    border: #070707 solid 2px;
+                                    text-align: center;" placeholder="Your Invitation link">
+                                    <button a href="https://discord.gg/z8a56hNB9Q" class="WHITELISbtn black-shape" onclick="makeLink()">
+                                        Copy Link
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>
+                                    </button>
+                                </div> -->
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="First_Survivor_CityLeftSection">
+                        <div class="First_Survivor_CityLeft_TimerSect">
+                            <div class="First_Survivor_CityLeft_Timer">
+                                <div class="price-counter">
+                                    <div class="timer timer_2 m-0">
+                                        <ul>
+                                            <li class="days">12<span>D</span></li>
+                                            <li class="hours">09<span>H</span></li>
+                                            <li class="minutes">46<span>M</span></li>
+                                            <li class="seconds">13<span>S</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="TotalRisedProgressSect mt-120">
+                            <div class="TotalRisedProgressHeadings">
+                                <h3>Total Raised : <span id="text1">10000 USDT / 2000000 USDT</span></h3>
+                                
+                            </div>
+                            <div class="TotalRisedProgressBg">
+                                <div class="TotalRisedProgressBar Progress0"></div>
+                            </div>
+                            <div class="TotalRisedProgresSaleAirdropSect">
+                                <p>Min: 20%</p>
+                                <p>Total: 100%</p>
+                            </div>
+                            <div class="Access_Allocation_ParticipantsSect">
+                                <ul>
+                                    <li><span>Access</span>
+                                        <p>Public Access</p>
+                                    </li>
+                                    <li><span>Allocation</span>
+                                        <p>200 NFT Max</p>
+                                    </li>
+                                    <li><span>Participants</span>
+                                        <p>200 Max</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="Project_clasic_2ContainerSocialSect">
+                                <ul>
+                                    <li><a href="s.denglianqiu.cn/+LFALdAvj2Qc3MWFl" target="_blank" class="icon-telegram"></i></a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-row-reverse marginC">
+                <div class="col-md-6">
+                    <div class="First_Survivor_CityRightSection">
+                        <div class="First_Survivor_CityRightHeadings">
+                            <div class="First_Survivor_CityRight_ProjectImg">
+                                <a href="index.html"><img src="assets/images/2.png" alt="img" class="img-fluid"></a>
+                            </div>
+                            <div class="First_Survivor_CityRight_ProjectName">
+                                <h2><a href="index.html">Spirit  NFT IDO</a></h2>
+                                <span>price: 1 NFT =  600 USDT</span>
+                            </div>
+                        </div>
+                        <p style="margin-bottom: 45px;">Spirit NFT, a total of 400, each price of 600usdt, each NFT air dropped 960 tokens, the first release of 30%.</p>
+                        
+                        <div class="First_Survivor_CityRight_Button" style="flex-direction: column;">
+                            <div style="display: flex;margin-bottom: 15px;"><input id="buyinput2" type="text" style=" width: 70%;
+                                margin-right: 50px;
+                                border-radius: 8px;
+                                border: #070707 solid 2px;
+                                text-align: center;" placeholder="Buy NFT Amount">
+                                 <button class="participateBtn black-shape" onclick="claim('#buyinput2')">
+                                    Buy with USDT
+                                    <span class="hover-shape1"></span>
+                                    <span class="hover-shape2"></span>
+                                    <span class="hover-shape3"></span>
+                                </button></div>
+                           
+                                <!-- <div style="display: flex;">
+                                    <input id="linkinput" type="text" style=" width: 70%;
+                                    margin-right: 20px;
+                                    border-radius: 8px;
+                                    border: #070707 solid 2px;
+                                    text-align: center;" placeholder="Your Invitation link">
+                                    <button a href="https://discord.gg/z8a56hNB9Q" class="WHITELISbtn black-shape" onclick="makeLink()">
+                                        Copy Link
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>
+                                    </button>
+                                </div> -->
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="First_Survivor_CityLeftSection">
+                        <div class="First_Survivor_CityLeft_TimerSect">
+                            <div class="First_Survivor_CityLeft_Timer">
+                                <div class="price-counter">
+                                    <div class="timer timer_2 m-0">
+                                        <ul>
+                                            <li class="days">12<span>D</span></li>
+                                            <li class="hours">09<span>H</span></li>
+                                            <li class="minutes">46<span>M</span></li>
+                                            <li class="seconds">13<span>S</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="TotalRisedProgressSect mt-120">
+                            <div class="TotalRisedProgressHeadings">
+                                <h3>Total Raised : <span id="text2">10000 USDT / 240000 USDT</span></h3>
+                                
+                            </div>
+                            <div class="TotalRisedProgressBg">
+                                <div class="TotalRisedProgressBar Progress0"></div>
+                            </div>
+                            <div class="TotalRisedProgresSaleAirdropSect">
+                                <p>Min: 20%</p>
+                                <p>Total: 100%</p>
+                            </div>
+                            <div class="Access_Allocation_ParticipantsSect">
+                                <ul>
+                                    <li><span>Access</span>
+                                        <p>Public Access</p>
+                                    </li>
+                                    <li><span>Allocation</span>
+                                        <p>400 NFT Max</p>
+                                    </li>
+                                    <li><span>Participants</span>
+                                        <p>400 Max</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="Project_clasic_2ContainerSocialSect">
+                                <ul>
+                                    <li><a href="s.denglianqiu.cn/+LFALdAvj2Qc3MWFl" target="_blank" class="icon-telegram"></i></a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+               
+            </div>
+            <div class="row flex-row-reverse marginC">
+                <div class="col-md-6">
+                    <div class="First_Survivor_CityRightSection">
+                        <div class="First_Survivor_CityRightHeadings">
+                            <div class="First_Survivor_CityRight_ProjectImg">
+                                <a href="index.html"><img src="assets/images/3.png" alt="img" class="img-fluid"></a>
+                            </div>
+                            <div class="First_Survivor_CityRight_ProjectName">
+                                <h2><a href="index.html">Dark Elf NFT IDO</a></h2>
+                                <span>price: 1 NFT =  100 USDT</span>
+                            </div>
+                        </div>
+                        <p style="margin-bottom: 45px;">Dark Elf NFT, a total of 1000, each price of 100usdt, each NFT airdrops 150 tokens, releasing 30% for the first time.</p>
+                        
+                        <div class="First_Survivor_CityRight_Button" style="flex-direction: column;">
+                            <div style="display: flex;margin-bottom: 15px;"><input id="buyinput3" type="text" style=" width: 70%;
+                                margin-right: 50px;
+                                border-radius: 8px;
+                                border: #070707 solid 2px;
+                                text-align: center;" placeholder="Buy NFT Amount">
+                                 <button class="participateBtn black-shape" onclick="claim('#buyinput3')">
+                                    Buy with USDT
+                                    <span class="hover-shape1"></span>
+                                    <span class="hover-shape2"></span>
+                                    <span class="hover-shape3"></span>
+                                </button></div>
+                           
+                                <!-- <div style="display: flex;">
+                                    <input id="linkinput" type="text" style=" width: 70%;
+                                    margin-right: 20px;
+                                    border-radius: 8px;
+                                    border: #070707 solid 2px;
+                                    text-align: center;" placeholder="Your Invitation link">
+                                    <button a href="https://discord.gg/z8a56hNB9Q" class="WHITELISbtn black-shape" onclick="makeLink()">
+                                        Copy Link
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>
+                                    </button>
+                                </div> -->
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="First_Survivor_CityLeftSection">
+                        <div class="First_Survivor_CityLeft_TimerSect">
+                            <div class="First_Survivor_CityLeft_Timer">
+                                <div class="price-counter">
+                                    <div class="timer timer_2 m-0">
+                                        <ul>
+                                            <li class="days">12<span>D</span></li>
+                                            <li class="hours">09<span>H</span></li>
+                                            <li class="minutes">46<span>M</span></li>
+                                            <li class="seconds">13<span>S</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="TotalRisedProgressSect mt-120">
+                            <div class="TotalRisedProgressHeadings">
+                                <h3>Total Raised : <span id="text3">10000 USDT / 100000 USDT</span></h3>
+                                
+                            </div>
+                            <div class="TotalRisedProgressBg">
+                                <div class="TotalRisedProgressBar Progress0"></div>
+                            </div>
+                            <div class="TotalRisedProgresSaleAirdropSect">
+                                <p>Min: 20%</p>
+                                <p>Total: 100%</p>
+                            </div>
+                            <div class="Access_Allocation_ParticipantsSect">
+                                <ul>
+                                    <li><span>Access</span>
+                                        <p>Public Access</p>
+                                    </li>
+                                    <li><span>Allocation</span>
+                                        <p>1000 NFT Max</p>
+                                    </li>
+                                    <li><span>Participants</span>
+                                        <p>1000 Max</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="Project_clasic_2ContainerSocialSect">
+                                <ul>
+                                    <li><a href="s.denglianqiu.cn/+LFALdAvj2Qc3MWFl" target="_blank" class="icon-telegram"></i></a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-row-reverse marginC">
+                <div class="col-md-6">
+                    <div class="First_Survivor_CityRightSection">
+                        <div class="First_Survivor_CityRightHeadings">
+                            <div class="First_Survivor_CityRight_ProjectImg">
+                                <a href="index.html"><img src="assets/images/4.png" alt="img" class="img-fluid"></a>
+                            </div>
+                            <div class="First_Survivor_CityRight_ProjectName">
+                                <h2><a href="index.html">Dwarf NFT IDO</a></h2>
+                                <span>price: 1 NFT =  1000 USDT</span>
+                            </div>
+                        </div>
+                        <p style="margin-bottom: 45px;">Dwarf NFT, a total of 200, each price 1000usdt, each NFT air dropped 1540 tokens, the first release of 50%.</p>
+                        
+                        <div class="First_Survivor_CityRight_Button" style="flex-direction: column;">
+                            <div style="display: flex;margin-bottom: 15px;"><input id="buyinput4" type="text" style=" width: 70%;
+                                margin-right: 50px;
+                                border-radius: 8px;
+                                border: #070707 solid 2px;
+                                text-align: center;" placeholder="Buy NFT Amount">
+                                 <button class="participateBtn black-shape" onclick="claim('#buyinput4')">
+                                    Buy with USDT
+                                    <span class="hover-shape1"></span>
+                                    <span class="hover-shape2"></span>
+                                    <span class="hover-shape3"></span>
+                                </button></div>
+                           
+                                <!-- <div style="display: flex;">
+                                    <input id="linkinput" type="text" style=" width: 70%;
+                                    margin-right: 20px;
+                                    border-radius: 8px;
+                                    border: #070707 solid 2px;
+                                    text-align: center;" placeholder="Your Invitation link">
+                                    <button a href="https://discord.gg/z8a56hNB9Q" class="WHITELISbtn black-shape" onclick="makeLink()">
+                                        Copy Link
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>
+                                    </button>
+                                </div> -->
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="First_Survivor_CityLeftSection">
+                        <div class="First_Survivor_CityLeft_TimerSect">
+                            <div class="First_Survivor_CityLeft_Timer">
+                                <div class="price-counter">
+                                    <div class="timer timer_2 m-0">
+                                        <ul>
+                                            <li class="days">12<span>D</span></li>
+                                            <li class="hours">09<span>H</span></li>
+                                            <li class="minutes">46<span>M</span></li>
+                                            <li class="seconds">13<span>S</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="TotalRisedProgressSect mt-120">
+                            <div class="TotalRisedProgressHeadings">
+                                <h3>Total Raised : <span id="text4">10000 USDT / 200000 USDT</span></h3>
+                                
+                            </div>
+                            <div class="TotalRisedProgressBg">
+                                <div class="TotalRisedProgressBar Progress0"></div>
+                            </div>
+                            <div class="TotalRisedProgresSaleAirdropSect">
+                                <p>Min: 20%</p>
+                                <p>Total: 100%</p>
+                            </div>
+                            <div class="Access_Allocation_ParticipantsSect">
+                                <ul>
+                                    <li><span>Access</span>
+                                        <p>Public Access</p>
+                                    </li>
+                                    <li><span>Allocation</span>
+                                        <p>200 NFT Max</p>
+                                    </li>
+                                    <li><span>Participants</span>
+                                        <p>200 Max</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="Project_clasic_2ContainerSocialSect">
+                                <ul>
+                                    <li><a href="s.denglianqiu.cn/+LFALdAvj2Qc3MWFl" target="_blank" class="icon-telegram"></i></a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+               
+            </div>
+            <div class="row flex-row-reverse marginC">
+                <div class="col-md-6">
+                    <div class="First_Survivor_CityRightSection">
+                        <div class="First_Survivor_CityRightHeadings">
+                            <div class="First_Survivor_CityRight_ProjectImg">
+                                <a href="index.html"><img src="assets/images/5.png" alt="img" class="img-fluid"></a>
+                            </div>
+                            <div class="First_Survivor_CityRight_ProjectName">
+                                <h2><a href="index.html">Orc NFT IDO</a></h2>
+                                <span>price: 1 NFT =  600 USDT</span>
+                            </div>
+                        </div>
+                        <p style="margin-bottom: 45px;">Orc NFT, a total of 400, each price 600usdt, each NFT airdropped 800 tokens, the first release of 50%.</p>
+                        
+                        <div class="First_Survivor_CityRight_Button" style="flex-direction: column;">
+                            <div style="display: flex;margin-bottom: 15px;"><input id="buyinput5" type="text" style=" width: 70%;
+                                margin-right: 50px;
+                                border-radius: 8px;
+                                border: #070707 solid 2px;
+                                text-align: center;" placeholder="Buy NFT Amount">
+                                 <button class="participateBtn black-shape" onclick="claim('#buyinput5')">
+                                    Buy with USDT
+                                    <span class="hover-shape1"></span>
+                                    <span class="hover-shape2"></span>
+                                    <span class="hover-shape3"></span>
+                                </button></div>
+                           
+                                <!-- <div style="display: flex;">
+                                    <input id="linkinput" type="text" style=" width: 70%;
+                                    margin-right: 20px;
+                                    border-radius: 8px;
+                                    border: #070707 solid 2px;
+                                    text-align: center;" placeholder="Your Invitation link">
+                                    <button a href="https://discord.gg/z8a56hNB9Q" class="WHITELISbtn black-shape" onclick="makeLink()">
+                                        Copy Link
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>
+                                    </button>
+                                </div> -->
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="First_Survivor_CityLeftSection">
+                        <div class="First_Survivor_CityLeft_TimerSect">
+                            <div class="First_Survivor_CityLeft_Timer">
+                                <div class="price-counter">
+                                    <div class="timer timer_2 m-0">
+                                        <ul>
+                                            <li class="days">12<span>D</span></li>
+                                            <li class="hours">09<span>H</span></li>
+                                            <li class="minutes">46<span>M</span></li>
+                                            <li class="seconds">13<span>S</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="TotalRisedProgressSect mt-120">
+                            <div class="TotalRisedProgressHeadings">
+                                <h3>Total Raised : <span id="text5">10000 USDT / 240000 USDT</span></h3>
+                                
+                            </div>
+                            <div class="TotalRisedProgressBg">
+                                <div class="TotalRisedProgressBar Progress0"></div>
+                            </div>
+                            <div class="TotalRisedProgresSaleAirdropSect">
+                                <p>Min: 20%</p>
+                                <p>Total: 100%</p>
+                            </div>
+                            <div class="Access_Allocation_ParticipantsSect">
+                                <ul>
+                                    <li><span>Access</span>
+                                        <p>Public Access</p>
+                                    </li>
+                                    <li><span>Allocation</span>
+                                        <p>400 NFT Max</p>
+                                    </li>
+                                    <li><span>Participants</span>
+                                        <p>400 Max</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="Project_clasic_2ContainerSocialSect">
+                                <ul>
+                                    <li><a href="s.denglianqiu.cn/+LFALdAvj2Qc3MWFl" target="_blank" class="icon-telegram"></i></a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-row-reverse marginC">
+                <div class="col-md-6">
+                    <div class="First_Survivor_CityRightSection">
+                        <div class="First_Survivor_CityRightHeadings">
+                            <div class="First_Survivor_CityRight_ProjectImg">
+                                <a href="index.html"><img src="assets/images/6.png" alt="img" class="img-fluid"></a>
+                            </div>
+                            <div class="First_Survivor_CityRight_ProjectName">
+                                <h2><a href="index.html">Dark Angel NFT IDO</a></h2>
+                                <span>price: 1 NFT =  100 USDT</span>
+                            </div>
+                        </div>
+                        <p style="margin-bottom: 45px;">Dark angel NFT, a total of 1000, each price of 100usdt, each NFT airdropped 120 tokens, the first release of 50%.</p>
+                        
+                        <div class="First_Survivor_CityRight_Button" style="flex-direction: column;">
+                            <div style="display: flex;margin-bottom: 15px;"><input id="buyinput6" type="text" style=" width: 70%;
+                                margin-right: 50px;
+                                border-radius: 8px;
+                                border: #070707 solid 2px;
+                                text-align: center;" placeholder="Buy NFT Amount">
+                                 <button class="participateBtn black-shape" onclick="claim('#buyinput6')">
+                                    Buy with USDT
+                                    <span class="hover-shape1"></span>
+                                    <span class="hover-shape2"></span>
+                                    <span class="hover-shape3"></span>
+                                </button></div>
+                           
+                                <!-- <div style="display: flex;">
+                                    <input id="linkinput" type="text" style=" width: 70%;
+                                    margin-right: 20px;
+                                    border-radius: 8px;
+                                    border: #070707 solid 2px;
+                                    text-align: center;" placeholder="Your Invitation link">
+                                    <button a href="https://discord.gg/z8a56hNB9Q" class="WHITELISbtn black-shape" onclick="makeLink()">
+                                        Copy Link
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>
+                                    </button>
+                                </div> -->
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="First_Survivor_CityLeftSection">
+                        <div class="First_Survivor_CityLeft_TimerSect">
+                            <div class="First_Survivor_CityLeft_Timer">
+                                <div class="price-counter">
+                                    <div class="timer timer_2 m-0">
+                                        <ul>
+                                            <li class="days">12<span>D</span></li>
+                                            <li class="hours">09<span>H</span></li>
+                                            <li class="minutes">46<span>M</span></li>
+                                            <li class="seconds">13<span>S</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="TotalRisedProgressSect mt-120">
+                            <div class="TotalRisedProgressHeadings">
+                                <h3>Total Raised : <span id="text6">10000 USDT / 100000 USDT</span></h3>
+                                
+                            </div>
+                            <div class="TotalRisedProgressBg">
+                                <div class="TotalRisedProgressBar Progress0"></div>
+                            </div>
+                            <div class="TotalRisedProgresSaleAirdropSect">
+                                <p>Min: 20%</p>
+                                <p>Total: 100%</p>
+                            </div>
+                            <div class="Access_Allocation_ParticipantsSect">
+                                <ul>
+                                    <li><span>Access</span>
+                                        <p>Public Access</p>
+                                    </li>
+                                    <li><span>Allocation</span>
+                                        <p>1000 NFT Max</p>
+                                    </li>
+                                    <li><span>Participants</span>
+                                        <p>1000 Max</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="Project_clasic_2ContainerSocialSect">
+                                <ul>
+                                    <li><a href="s.denglianqiu.cn/+LFALdAvj2Qc3MWFl" target="_blank" class="icon-telegram"></i></a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+               
+            </div>
+            <div class="row flex-row-reverse marginC">
+                <div class="col-md-6">
+                    <div class="First_Survivor_CityRightSection">
+                        <div class="First_Survivor_CityRightHeadings">
+                            <div class="First_Survivor_CityRight_ProjectImg">
+                                <a href="index.html"><img src="assets/images/7.png" alt="img" class="img-fluid"></a>
+                            </div>
+                            <div class="First_Survivor_CityRight_ProjectName">
+                                <h2><a href="index.html">Ordinary NFT IDO</a></h2>
+                                <span>price: 1 NFT =  10 USDT</span>
+                            </div>
+                        </div>
+                        <p style="margin-bottom: 45px;">There are 70000 ordinary NFTs in total, each with a price of 10usdt. Each NFT airdrops 30 tokens, releasing 50% for the first time.</p>
+                        
+                        <div class="First_Survivor_CityRight_Button" style="flex-direction: column;">
+                            <div style="display: flex;margin-bottom: 15px;"><input id="buyinput7" type="text" style=" width: 70%;
+                                margin-right: 50px;
+                                border-radius: 8px;
+                                border: #070707 solid 2px;
+                                text-align: center;" placeholder="Buy NFT Amount">
+                                 <button class="participateBtn black-shape" onclick="claim('#buyinput7')">
+                                    Buy with USDT
+                                    <span class="hover-shape1"></span>
+                                    <span class="hover-shape2"></span>
+                                    <span class="hover-shape3"></span>
+                                </button></div>
+                           
+                                <!-- <div style="display: flex;">
+                                    <input id="linkinput" type="text" style=" width: 70%;
+                                    margin-right: 20px;
+                                    border-radius: 8px;
+                                    border: #070707 solid 2px;
+                                    text-align: center;" placeholder="Your Invitation link">
+                                    <button a href="https://discord.gg/z8a56hNB9Q" class="WHITELISbtn black-shape" onclick="makeLink()">
+                                        Copy Link
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>
+                                    </button>
+                                </div> -->
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="First_Survivor_CityLeftSection">
+                        <div class="First_Survivor_CityLeft_TimerSect">
+                            <div class="First_Survivor_CityLeft_Timer">
+                                <div class="price-counter">
+                                    <div class="timer timer_2 m-0">
+                                        <ul>
+                                            <li class="days">12<span>D</span></li>
+                                            <li class="hours">09<span>H</span></li>
+                                            <li class="minutes">46<span>M</span></li>
+                                            <li class="seconds">13<span>S</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="TotalRisedProgressSect mt-120">
+                            <div class="TotalRisedProgressHeadings">
+                                <h3>Total Raised : <span id="text7">10000 USDT / 700000 USDT</span></h3>
+                                
+                            </div>
+                            <div class="TotalRisedProgressBg">
+                                <div class="TotalRisedProgressBar Progress0"></div>
+                            </div>
+                            <div class="TotalRisedProgresSaleAirdropSect">
+                                <p>Min: 20%</p>
+                                <p>Total: 100%</p>
+                            </div>
+                            <div class="Access_Allocation_ParticipantsSect">
+                                <ul>
+                                    <li><span>Access</span>
+                                        <p>Public Access</p>
+                                    </li>
+                                    <li><span>Allocation</span>
+                                        <p>70000 NFT Max</p>
+                                    </li>
+                                    <li><span>Participants</span>
+                                        <p>70000 Max</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="Project_clasic_2ContainerSocialSect">
+                                <ul>
+                                    <li><a href="s.denglianqiu.cn/+LFALdAvj2Qc3MWFl" target="_blank" class="icon-telegram"></i></a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="PoolAndTokenInfo_Sect">
+                <div class="row">
+                    <!-- 左边文字说明 -->
+                    <div class="col-md-6">
+                        <div class="leftBox"></div>
+                    </div>
+                    <!-- 右边的邀请模块 -->
+                    <div class="col-md-6">
+                        <div class="rightBox">
+                            <div class="title" style="margin-bottom: 50px;">
+                                <p>INVITE FRIENDS</p>
+                            </div>
+                            <div class="referee" style="display: flex; justify-content: space-between; align-items: center;">
+                                <div class="leftTxt">
+                                    <p style="font-size: 14px; margin-bottom: 10px;">My referee</p>
+                                    <p style="font-size: 14px; color: #a4a4a4;">No referrer is available</p>
+                                </div>
+                                <div class="rightBtn">
+                                    <button>Add referral</button>
+                                </div>
+                            </div>
+                            <hr style="background-color: #000; margin-top: 30px; margin-bottom: 30px;">
+                            <div>
+                                <p>My referral link</p>
+                                <div style="display: flex; width: 50px; justify-content: space-between; margin-top: 10px;">
+                                    <img src="./assets/images/icons/heng.png" style="width:20px">
+                                    <img src="./assets/images/icons/copy.png" style="width:20px">
+                                </div>
+                            </div>
+                            <hr style="background-color: #000; margin-top: 30px; margin-bottom: 30px;">
+                            <div>
+                                <p>My invitation code</p>
+                                <div style="display: flex; width: 50px; justify-content: space-between; margin-top: 10px;">
+                                    <img src="./assets/images/icons/heng.png" style="width:20px">
+                                    <img src="./assets/images/icons/copy.png" style="width:20px">
+                                </div>
+                            </div>
+                            <hr style="background-color: #000; margin-top: 30px; margin-bottom: 30px;">
+                            <div>
+                                <p>My referrals</p>
+                                <div style="width: 504px;padding: 10px 0; height: 114px; background-color: #72bdf614; border-radius: 30px; margin-top: 10px; display: flex;">
+                                    <div style="display: flex; flex: 1; border-right: 1px solid #a4a4a4; position: relative;">
+                                        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                                            <p style="font-size: 22px; font-weight: 400;width: 20px;">0</p>
+                                            <p style="font-size: 11px; color: #a4a4a4;">My commission(MGC)</p>   
+                                        </div>
+                                        <div style="position: absolute; right: 10px;">
+                                            <button style="border-radius: 10px; background-color: rgb(28 22 22); color: #fff; font-size: 12px; padding: 10px;">Extract</button>
+                                        </div>
+                                    </div>
+                                    <div style="flex: 1;display: flex;">
+                                        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                                            <p style="font-size: 22px; font-weight: 400;width: 20px;">0</p>
+                                            <p style="font-size: 11px; color: #a4a4a4;">The number of my referrals</p>   
+                                        </div></div>
+                                </div>
+                                <p style="font-size: 15px; margin-top: 20px;">Details of my referrals</p>
+                            </div>
+                            <hr style="background-color: #000; margin-top: 30px; margin-bottom: 10px;">
+                            <div style="display: flex; width: 100%; justify-content: space-between; font-size: 10px; color: #a4a4a4;">
+                                <p>Address</p>
+                                <p>Volume(MGC)</p>
+                            </div>
+                            <div style="width: 100%; height: 85px; display: flex; justify-content: center; align-items: center;">
+                                <p>NO DATA</p>
+                            </div>
+                            <div style="display: flex; justify-content: end;">
+                                <div>
+                                    <a href="#" style="display: inline-block; background-color: #a4a4a4; width: 20px; height: 20px; border-radius: 50%; margin-right: 10px;"><img style="width: 15px; margin-top: 2px; margin-left: 1px;" src="./assets/images/icons/arrowLeft.png" alt=""></a>
+                                    <a href="#" style="display: inline-block; background-color: #a4a4a4; width: 20px; height: 20px; border-radius: 50%;"><img style="width: 15px; margin-top: 2px; margin-left: 4px;" src="./assets/images/icons/arrowRight.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer Section Start -->
+    <div class="gamfi-footer-section">
+        <div class="container">
+            <div class="footer-cta-area text-center active-shape hover-shape-inner">
+                <h2 class="title mb-15">
+                    Join the community<br>
+                    
+                </h2>
+                <div class="dsc mb-40">
+                    IDO whitelist application
+                </div>
+                <a class="banner-btn wow fadeInUp black-shape" data-wow-delay="0.2s" data-wow-duration="0.6s" href="./index.html" style="visibility: visible; animation-duration: 0.6s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <span class="btn-text">Discord</span>
+                    <span class="hover-shape1"></span>
+                    <span class="hover-shape2"></span>
+                    <span class="hover-shape3"></span>
+                </a>
+                <span class="border-shadow shadow-1"></span>
+                <span class="border-shadow shadow-2"></span>
+                <span class="border-shadow shadow-3"></span>
+                <span class="border-shadow shadow-4"></span>
+                <span class="hover-shape-bg hover_shape1"></span>
+                <span class="hover-shape-bg hover_shape2"></span>
+                <span class="hover-shape-bg hover_shape3"></span>
+            </div>
+        </div>
+        <div class="footer-area">
+            <div class="container">
+                <div class="sec-heading text-center">
+                    <div class="sub-inner mb-52">
+                        <span class="sub-title white-color">Find us on Social</span>
+                    </div>
+                </div>
+                <div class="footer-listing text-center mb-100 md-mb-70">
+                    <ul class="footer-icon-list">
+                        <!-- <li><a href="https://twitter.com/Colaswap_fi"><i class="icon-twitter"></i></a></li> -->
+                        <li><a href="s.denglianqiu.cn/+LFALdAvj2Qc3MWFl"><i class="icon-telegram"></i></a></li>
+                        <!-- <li><a href="https://discord.gg/z8a56hNB9Q"><i class="icon-discord"></i></a></li> -->
+                    </ul>
+                </div>
+                <div class="copyright-area text-center mb-0">
+                    <div class="dsc mb-37">Copyright © 2022. <a target="_blank" class="gafi" href="#">NCSOFT-DAO</a></div>
+                </div>
+                <div class="scrollup text-center">
+                    <a href="#"><i class="icon-arrow_up"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section End -->
+
+    <!-- Modal Section Start-->
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modals-title  mb-0" id="exampleModalLabel">Connect Wallet</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-x"></i></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-20">Please select a wallet to connect to this marketplace</p>
+                    <div class="connect-section">
+                        <ul class="heading-list">
+                            <li><a href="#"><span><img src="assets/images/icons/meta-mask.png" alt="Meta-mask-Image"></span>MetaMask</a></li>
+                            <li><a href="#"><span><img src="assets/images/icons/coinbase.png" alt="Coinbase-Image"></span>Coinbase</a></li>
+                            <li><a href="#"><span><img src="assets/images/icons/trust.png" alt="Trust-Image"></span>Trust Wallet</a></li>
+                            <li><a href="#"><span><img src="assets/images/icons/wallet.png" alt="Wallet-Image"></span>WalletConnect</a></li>
+                        </ul>
+                    </div>
+                    <p>By connecting your wallet, you agree to our <a href="#">
+                            <span class="modal-title">Terms of Service </span></a>and our <a href="#">
+                            <span class="modal-title"> Privacy Policy</span></a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Section End-->
+
+    <!-- modernizr js -->
+    <script src="assets/js/modernizr-2.8.3.min.js"></script>
+    <!-- jquery latest version -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap v4.4.1 js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- popup.min js -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- imagesloaded.pkgd.min js -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- wow js -->
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- counter top js -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- owl.carousel js -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- plugins js -->
+    <script src="assets/js/plugins.js"></script>
+    <!-- Time Counter js -->
+    <script src="assets/js/time-counter.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/my.js"></script>
+    
+    <!--Project Clasic Slider-->
+    <!-- <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script> -->
+
+
+</body>
+</html>
