@@ -102,7 +102,7 @@ body{
 	border-top: 1px solid #B9B9B9;
 }
 #div_statusBar1{
-	width: 25%;
+	width: 20%;
 	height: 50px;
 	float: left;
 	text-align: center;
@@ -112,7 +112,7 @@ body{
 	color: #515151;
 }
 #div_statusBar2{
-	width: 25%;
+	width: 20%;
 	height: 50px;
 	float: left;
 	text-align: center;
@@ -122,7 +122,7 @@ body{
 	color: #515151;
 }
 #div_statusBar3{
-	width: 25%;
+	width: 20%;
 	height: 50px;
 	float: left;
 	text-align: center;
@@ -132,12 +132,22 @@ body{
 	color: #2492EB;
 }
 #div_statusBar4{
-	width: 25%;
+	width: 20%;
 	height: 50px;
 	float: left;
 	text-align: center;
 }
 #div_statusBar4 a{
+	text-decoration: none;
+	color: #515151;
+}
+#div_statusBar5{
+	width: 20%;
+	height: 50px;
+	float: left;
+	text-align: center;
+}
+#div_statusBar5 a{
 	text-decoration: none;
 	color: #515151;
 }
