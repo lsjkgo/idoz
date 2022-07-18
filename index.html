@@ -107,8 +107,8 @@
 				</div>
 				<div class="selectBox">
 					<img src="./img/sj.png">
-					<p>English</p>
-					<p>中文简体</p>
+					<p onclick="chooseLang('en')">English</p>
+					<p onclick="chooseLang('cn')">中文简体</p>
 				</div>
 		   </div>
 		   <!---轮播图--->
@@ -256,34 +256,29 @@
 		<script  type="text/javascript" src="js/lang.js"></script>
 		
 		<script>
-			let selectBox = document.querySelector('.selectBox')
+			
 			 var num1 = 0;
 			   var bool1 = true;
 			function qihuan(){
-				selectBox.style.display = 'flex'
+				let selectBox = document.querySelector('.selectBox')
+				
 			   if(num1%2 == 0){
 				   bool1 = true;
+				   selectBox.style.display = 'flex'
 			   }else{
 				   bool1 =false;
+				   selectBox.style.display = 'none'
 			   }
 			   if(bool1){
-				   chooseLang('cn')
+				//    chooseLang('cn')
 				   num1 = num1+1;
 			   }else{
-				   chooseLang('en')
+				//    chooseLang('en')
 				   num1 = num1+1;
 			   }
 			   
 			}
-			document.addEventListener('click',function(e){
-				if (e.target.src == 'http://127.0.0.1:5505/img/wl.png') {
-					
-				} else {
-					selectBox.style.display = 'none'
-				}
-				
-				
-        })
+		
 		   </script>
 		   <script>
 			window.onload = async function (){
