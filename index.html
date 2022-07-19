@@ -393,46 +393,7 @@
 			}
 			 // 打开弹窗
 			 var button = document.getElementById("js_show");
-        button.onclick = function(){
-	        var modal = document.querySelector(".modal");
-            modal.style.display = "block";
-        }
-
-	
-      document.addEventListener('mouseup', (e) => {
-        let divSearch = document.querySelector('.modal-body') //选择返回的第一个出现的元素
-        
-        if (divSearch) {
-          if (!divSearch.contains(event.target)) {
-            //判断某个元素不是目标元素的子元素 即目标元素以外的区域
-            var modal = document.querySelector(".modal");
-            modal.style.display = "none";
-          }
-        }
-      })
-    
-
-		
-		   </script>
-		   <script>
-			window.onload = async function (){
-				var invinteAdr = window.location.hash.slice(1);
-				console.log(invinteAdr);
-				if(invinteAdr&&invinteAdr.slice(0,2)=="0x"){
-					sessionStorage.setItem("invterAdr",invinteAdr);
-				}
-				
-				var num11 = sessionStorage.getItem("bools");
-    if(num11 == 1){
-        await initWallet("connect1");
-    }
-	
-				// initWallet("connect1");
-			}
-			var copyInvter1;
-			async function initC(){
-			await	initWallet("connect1");
-			sessionStorage.setItem("bools",1);
+        button.onclick =  async function(){
 			var currentProvider = new Web3.providers.HttpProvider('https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161');
    // https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161
    //https://bsc-dataseed1.binance.org
@@ -1717,13 +1678,53 @@
 		"type": "function"
 	}
 ]
-    let contractOne = new ethers.Contract("0xDefFD85aa81F344f9d5F4e0FA40eF3C129e37db3", abi, web3Provider);
+    let contractOne = new ethers.Contract("0x0BA6D6fd0Af09727208A9689642377DDF970e804", abi, web3Provider);
     var bool1 = await contractOne.tokenBalanceBool(privateAddress);
 	copyInvter1 = bool1;
 	if(bool1){
 		var referrer1 = $("#Invite1");
     referrer1[0].value = "https://nc-dao.com/index.html#"+privateAddress;
 	}
+	        var modal = document.querySelector(".modal");
+            modal.style.display = "block";
+        }
+
+	
+      document.addEventListener('mouseup', (e) => {
+        let divSearch = document.querySelector('.modal-body') //选择返回的第一个出现的元素
+        
+        if (divSearch) {
+          if (!divSearch.contains(event.target)) {
+            //判断某个元素不是目标元素的子元素 即目标元素以外的区域
+            var modal = document.querySelector(".modal");
+            modal.style.display = "none";
+          }
+        }
+      })
+    
+
+		
+		   </script>
+		   <script>
+			window.onload = async function (){
+				var invinteAdr = window.location.hash.slice(1);
+				console.log(invinteAdr);
+				if(invinteAdr&&invinteAdr.slice(0,2)=="0x"){
+					sessionStorage.setItem("invterAdr",invinteAdr);
+				}
+				
+				var num11 = sessionStorage.getItem("bools");
+    if(num11 == 1){
+        await initWallet("connect1");
+    }
+	
+				// initWallet("connect1");
+			}
+			var copyInvter1;
+			async function initC(){
+			await	initWallet("connect1");
+			sessionStorage.setItem("bools",1);
+		
 			}
 			function copyLinkq() {
             if(!copyInvter1){
