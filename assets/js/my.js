@@ -3334,16 +3334,23 @@ async function approve(){
     } catch (error) {
         loadingStop();
         Dreamer.error("approve fail",2000);
+        return;
     }
   
     loadingStop();
     Dreamer.success("approve success",2000);
+    return true;
 }
 
 
 async function claim(str) {
 
-    await approve();
+   var bools12 =  await approve();
+   if(!bools12){
+    loadingStop();
+    // Dreamer.error("approve is not success",2000);
+    return;
+   }
 
     var abi = [
         {
@@ -4918,6 +4925,7 @@ async function claim(str) {
     } catch (error) {
         loadingStop();
         Dreamer.error("claim is not success",2000);
+        return;
     }
     loadingStop();
     Dreamer.success("Claim is success",2000);
