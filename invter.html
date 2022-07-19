@@ -277,20 +277,20 @@ table{border-collapse:collapse;border-spacing:0}
                     <div class="col-md-6">
                         <div class="rightBox">
                             <div class="title" style="margin-bottom: 50px;">
-                                <p>INVITE FRIENDS</p>
+                                <p data-locale="INVITEFrinds">INVITE FRIENDS</p>
                             </div>
                             <div class="referee" style="display: flex; justify-content: space-between; align-items: center;">
                                 <div class="leftTxt">
-                                    <p style="font-size: 14px; margin-bottom: 10px;">My referee</p>
-                                    <p style="font-size: 14px; color: #a4a4a4;" id="referrer">No referrer is available</p>
+                                    <p style="font-size: 14px; margin-bottom: 10px;" data-locale="MyReferee">My referee</p>
+                                    <p style="font-size: 14px; color: #a4a4a4;" id="referrer" data-locale="NoReferee">No referrer is available</p>
                                 </div>
                                 <div class="rightBtn">
-                                    <button>Referral</button>
+                                    <button data-locale="copyReferee">Copy referee</button>
                                 </div>
                             </div>
                             <hr style="background-color: #000; margin-top: 30px; margin-bottom: 30px;">
                             <div>
-                                <p>My referral link</p>
+                                <p data-locale="myLink">My referral link</p>
                                 <div style="display: flex; width: 50px; justify-content: space-between; margin-top: 10px;" >
                                   <input type="text" id="link" style="border: none;
                                   background: #f8fafd;">
@@ -299,7 +299,7 @@ table{border-collapse:collapse;border-spacing:0}
                             </div>
                             <hr style="background-color: #000; margin-top: 30px; margin-bottom: 30px;">
                             <div>
-                                <p>My invitation code</p>
+                                <p data-locale="myCode">My invitation code</p>
                                 <div style="display: flex; width: 50px; justify-content: space-between; margin-top: 10px;">
                                   <input type="text" id = "code" style="border: none;
                                   background: #f8fafd;">
@@ -308,12 +308,12 @@ table{border-collapse:collapse;border-spacing:0}
                             </div>
                             <hr style="background-color: #000; margin-top: 30px; margin-bottom: 30px;">
                             <div>
-                                <p>My referrals</p>
+                                <p data-locale="myAchievement">My achievement</p>
                                 <div style="width: 100%;padding: 10px 0; height: 114px; background-color: #72bdf614; border-radius: 30px; margin-top: 10px; display: flex;">
                                     <div style="display: flex; flex: 1; border-right: 1px solid #a4a4a4; position: relative;">
                                         <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                             <p style="font-size: 22px; font-weight: 400;width: 20px;" id="rewardUsdt">0</p>
-                                            <p style="font-size: 11px; color: #a4a4a4;">My Commission(USDT)</p>   
+                                            <p style="font-size: 11px; color: #a4a4a4;" data-locale="myCommission">My Commission(USDT)</p>   
                                         </div>
                                         <!-- <div style="position: absolute; right: 10px;">
                                             <button style="border-radius: 10px; background-color: rgb(28 22 22); color: #fff; font-size: 12px; padding: 10px;">Extract</button>
@@ -322,15 +322,15 @@ table{border-collapse:collapse;border-spacing:0}
                                     <div style="flex: 1;display: flex;">
                                         <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                             <p style="font-size: 22px; font-weight: 400;width: 20px;" id="invterUsdt">0</p>
-                                            <p style="font-size: 11px; color: #a4a4a4;"> My Total Promotion</p>   
+                                            <p style="font-size: 11px; color: #a4a4a4;" data-locale="myTotalPromotion"> My Total Promotion(USDT)</p>   
                                         </div></div>
                                 </div>
-                                <p style="font-size: 15px; margin-top: 20px;">Details of my referrals</p>
+                                <!-- <p style="font-size: 15px; margin-top: 20px;">Details of my referrals</p> -->
                             </div>
-                            <hr style="background-color: #000; margin-top: 30px; margin-bottom: 10px;">
+                            <!-- <hr style="background-color: #000; margin-top: 30px; margin-bottom: 10px;">
                             <div style="display: flex; width: 100%; justify-content: space-between; font-size: 10px; color: #a4a4a4;">
                                 <p>Address</p>
-                                <p>Volume(MGC)</p>
+                                <p>Volume(USDT)</p>
                             </div>
                             <div style="width: 100%; height: 85px; display: flex; justify-content: center; align-items: center;">
                                 <p>NO DATA</p>
@@ -340,7 +340,7 @@ table{border-collapse:collapse;border-spacing:0}
                                     <a href="#" style="display: inline-block; background-color: #a4a4a4; width: 20px; height: 20px; border-radius: 50%; margin-right: 10px;"><img style="width: 15px; margin-top: 2px; margin-left: 1px;" src="./assets/images/icons/arrowLeft.png" alt=""></a>
                                     <a href="#" style="display: inline-block; background-color: #a4a4a4; width: 20px; height: 20px; border-radius: 50%;"><img style="width: 15px; margin-top: 2px; margin-left: 4px;" src="./assets/images/icons/arrowRight.png" alt=""></a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -350,7 +350,7 @@ table{border-collapse:collapse;border-spacing:0}
     
     <!-- Footer Section Start -->
     <div class="gamfi-footer-section">
-        <div class="container">
+        <!-- <div class="container">
             <div class="footer-cta-area text-center active-shape hover-shape-inner">
                 <h2 class="title mb-15">
                     Join the community<br>
@@ -373,12 +373,12 @@ table{border-collapse:collapse;border-spacing:0}
                 <span class="hover-shape-bg hover_shape2"></span>
                 <span class="hover-shape-bg hover_shape3"></span>
             </div>
-        </div>
+        </div> -->
         <div class="footer-area">
             <div class="container">
                 <div class="sec-heading text-center">
                     <div class="sub-inner mb-52">
-                        <span class="sub-title white-color">Find us on Social</span>
+                        <span class="sub-title white-color" data-locale="FindTg">Find us on Tg</span>
                     </div>
                 </div>
                 <div class="footer-listing text-center mb-100 md-mb-70">
@@ -450,7 +450,14 @@ table{border-collapse:collapse;border-spacing:0}
     <!-- main js -->
     <script src="assets/js/main.js"></script>
     <script src="./assets/js/my.js"></script>
-    
+    <script type="text/javascript" src="js/jquery.min.js?ver=3.5.1"></script>
+    <script type="text/javascript" src="js/jquery-migrate.min.js?ver=3.3.2"></script>
+    <script src='js/iqonic-custom.js?ver=1.0' id='iqonic-custom-js'></script>
+    <script src='js/js_composer_front.min.js?ver=6.6.0' id='wpb_composer_front_js-js'></script>
+    <script type="text/javascript" src="js/Fitment.js"></script>
+    <script type="text/javascript" src="js/NavigationBar.js"></script>
+    <script type="text/javascript" src="js/I18n/i18n.js"></script>
+    <script  type="text/javascript" src="js/lang.js"></script>
     <!--Project Clasic Slider-->
     <script>
 

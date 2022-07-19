@@ -96,7 +96,7 @@ body{
 }
 #div_statusBar2 a{
 	text-decoration: none;
-	color: #2492EB;
+	color: #515151;
 }
 #div_statusBar3{
 	width: 20%;
@@ -126,7 +126,8 @@ body{
 }
 #div_statusBar5 a{
 	text-decoration: none;
-	color: #515151;
+	color: #2492EB;
+	
 }
 .icon-bottom{
 	width: 1.6em;
