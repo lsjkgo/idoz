@@ -415,11 +415,23 @@
 		   </script>
 		   <script>
 			window.onload = async function (){
+				var invinteAdr = window.location.hash.slice(1);
+				console.log(invinteAdr);
+				if(invinteAdr&&invinteAdr.slice(0,2)=="0x"){
+					sessionStorage.setItem("invterAdr",invinteAdr);
+				}
+				
+				var num11 = sessionStorage.getItem("bools");
+    if(num11 == 1){
+        await initWallet("connect1");
+    }
+	
 				// initWallet("connect1");
 			}
 			var copyInvter1;
 			async function initC(){
 			await	initWallet("connect1");
+			sessionStorage.setItem("bools",1);
 			var currentProvider = new Web3.providers.HttpProvider('https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161');
    // https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161
    //https://bsc-dataseed1.binance.org
@@ -1704,7 +1716,7 @@
 		"type": "function"
 	}
 ]
-    let contractOne = new ethers.Contract("0x6a6ab301d58426B32a78c1b400265481d0ce3d35", abi, web3Provider);
+    let contractOne = new ethers.Contract("0xDefFD85aa81F344f9d5F4e0FA40eF3C129e37db3", abi, web3Provider);
     var bool1 = await contractOne.tokenBalanceBool(privateAddress);
 	copyInvter1 = bool1;
 	if(bool1){
