@@ -107,8 +107,8 @@
 				</div>
 				<div class="selectBox">
 					<img src="./img/sj.png">
-					<p onclick="chooseLang('en')">English</p>
-					<p onclick="chooseLang('cn')">中文简体</p>
+					<p onclick="clickYu('en')">English</p>
+					<p onclick="clickYu('cn')">中文简体</p>
 				</div>
 		   </div>
 		   <!---轮播图--->
@@ -276,6 +276,15 @@
 				   num1 = num1+1;
 			   }
 			   
+			}
+			function clickYu(str){
+				let selectBox = document.querySelector('.selectBox')
+				if(str == "en"){
+					chooseLang('en')
+				}else{
+					chooseLang('cn')
+				}
+				selectBox.style.display = 'none'
 			}
 		
 		   </script>

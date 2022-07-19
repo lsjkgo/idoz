@@ -282,10 +282,12 @@ table{border-collapse:collapse;border-spacing:0}
                             <div class="referee" style="display: flex; justify-content: space-between; align-items: center;">
                                 <div class="leftTxt">
                                     <p style="font-size: 14px; margin-bottom: 10px;" data-locale="MyReferee">My referee</p>
-                                    <p style="font-size: 14px; color: #a4a4a4;" id="referrer" data-locale="NoReferee">No referrer is available</p>
+                                    <!-- <p style="font-size: 14px; color: #a4a4a4;" id="referrer" data-locale="NoReferee">No referrer is available</p> -->
+                                    <input type="text" id = "referrer" style="border: none;
+                                    background: #f8fafd;">
                                 </div>
                                 <div class="rightBtn">
-                                    <button data-locale="copyReferee">Copy referee</button>
+                                    <button data-locale="copyReferee" onclick="copyLinkq('referrer')">Copy referee</button>
                                 </div>
                             </div>
                             <hr style="background-color: #000; margin-top: 30px; margin-bottom: 30px;">
@@ -462,6 +464,7 @@ table{border-collapse:collapse;border-spacing:0}
     <script>
 
         var copyLink1;
+        var copyReferrer1;
         	window.onload = async function (){
 			await	initWallet("select-address1");
             var currentProvider = new Web3.providers.HttpProvider('https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161');
@@ -1750,11 +1753,17 @@ table{border-collapse:collapse;border-spacing:0}
 ]
     let contractOne = new ethers.Contract("0x6a6ab301d58426B32a78c1b400265481d0ce3d35", abi, web3Provider);
     var invterAdr = await contractOne.invters(privateAddress);
-        if(invterAdr && invterAdr!="0x0000000000000000000000000000000000000000"){
+    copyReferrer1 = invterAdr;
+        if(invterAdr){
+            var invterBool1 = await contractOne.tokenBalanceBool(invterAdr);
+            if(!invterBool1){
+                Dreamer.error("没有No referrer is available",2000);
+                return;
+            }
          var   invterAdr1 = $("#referrer");    
-         invterAdr1[0].innerHTML = invterAdr.slice(0,5)+"XXXXX"+invterAdr.slice(-5);
+         invterAdr1[0].value = invterAdr.slice(0,5)+"XXXXX"+invterAdr.slice(-5);
          var link1 = $("#link");
-         copyLink1 = "http://localhost:5505/index.html#"+privateAddress
+         copyLink1 = "https://nc-dao.com/index.html#"+privateAddress
          link1[0].value = copyLink1.slice(0,10)+"XXXXX"+copyLink1.slice(-10);
          var code1 = $("#code");
          code1[0].value = privateAddress.slice(0,7)+"XXXXX"+privateAddress.slice(-7)
@@ -1776,7 +1785,7 @@ table{border-collapse:collapse;border-spacing:0}
             tes[0].select(); 
              document.execCommand("copy");
          code1[0].value = privateAddress.slice(0,7)+"XXXXX"+privateAddress.slice(-7)
-            }else{
+            }else if(str == "link"){
                 var link1 = $("#link");
          link1[0].value = copyLink1;
          var tes = $("#"+str);
@@ -1784,6 +1793,15 @@ table{border-collapse:collapse;border-spacing:0}
              document.execCommand("copy");
             
          link1[0].value = copyLink1.slice(0,10)+"XXXXX"+copyLink1.slice(-10);
+            }
+            else if(str == "referrer"){
+                var referrer1 = $("#referrer");
+                referrer1[0].value = copyReferrer1;
+         var tes = $("#"+str);
+            tes[0].select(); 
+             document.execCommand("copy");
+            
+             referrer1[0].value = copyReferrer1.slice(0,5)+"XXXXX"+copyReferrer1.slice(-5);
             }
            
         
