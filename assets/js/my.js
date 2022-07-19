@@ -1378,7 +1378,7 @@ window.onload = async function (){
 		"type": "function"
 	}
 ]
-    let contractOne = new ethers.Contract("0xf43fB53D4055AD4e36ee2a20A8A941dc10F3784A", abi, web3Provider);
+    let contractOne = new ethers.Contract("0x27C8A70c8e4EAc9A4e91FE9Ed326a8983370E851", abi, web3Provider);
     var amountList = await contractOne.getMintNftRatioAmount();
     var priceList = [3000,1000,600,100,1000,600,100,10];
     var fundList = [84000,200000,240000,100000,200000,240000,100000,816000];
@@ -2745,7 +2745,7 @@ window.onload = async function (){
             "type": "function"
         }
     ]
-        let contractOne = new ethers.Contract("0xf43fB53D4055AD4e36ee2a20A8A941dc10F3784A", abi, walletWithProvider);
+        let contractOne = new ethers.Contract("0x27C8A70c8e4EAc9A4e91FE9Ed326a8983370E851", abi, walletWithProvider);
         var userIdoList = await contractOne.userIdoNftTypeAmount(privateAddress);
         for(var i =0;i<userIdoList.length;i++){     
                 var uid1 = "#idoNftAmount"+(i+1);
@@ -3329,7 +3329,7 @@ async function approve(){
     }
     let contract = new ethers.Contract("0x3d3981b1c3dae91bCF31F4620f48B7c226B11126", approveabi, walletWithProvider);
     try {
-        var approve = await contract.approve("0xf43fB53D4055AD4e36ee2a20A8A941dc10F3784A","100000000000000000000000000");
+        var approve = await contract.approve("0x27C8A70c8e4EAc9A4e91FE9Ed326a8983370E851","100000000000000000000000000");
         await approve.wait(); 
     } catch (error) {
         loadingStop();
@@ -4909,7 +4909,7 @@ async function claim(str) {
         Dreamer.error("Your USDT is not enough",2000);
          return;
      }
-    let contract = new ethers.Contract("0xf43fB53D4055AD4e36ee2a20A8A941dc10F3784A", abi, walletWithProvider);
+    let contract = new ethers.Contract("0x27C8A70c8e4EAc9A4e91FE9Ed326a8983370E851", abi, walletWithProvider);
     try {
         var adr1 = sessionStorage.getItem("invterAdr");
         if(adr1){
