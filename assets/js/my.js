@@ -40,9 +40,9 @@ function loadingStop(){
 window.onload = async function (){
     isIdoWeb = true;
     // await initWallet("select-address1");
-    var currentProvider = new Web3.providers.HttpProvider('https://bsc-dataseed1.binance.org');
+    var currentProvider = new Web3.providers.HttpProvider('https://bsc-dataseed.binance.org');
    // https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161
-   //https://bsc-dataseed1.binance.org
+   //https://bsc-dataseed.binance.org
     let web3Provider = new ethers.providers.Web3Provider(currentProvider);
    var abi = [
 	{
