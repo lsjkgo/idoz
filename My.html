@@ -415,7 +415,7 @@
 	   	 // 打开弹窗
 			var button = document.getElementById("js_show");
         button.onclick = async function(){
-			var currentProvider = new Web3.providers.HttpProvider('https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161');
+			var currentProvider = new Web3.providers.HttpProvider('https://bsc-dataseed1.binance.org');
    // https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161
    //https://bsc-dataseed1.binance.org
     let web3Provider = new ethers.providers.Web3Provider(currentProvider);
@@ -1699,7 +1699,7 @@
 		"type": "function"
 	}
 ]
-    let contractOne = new ethers.Contract("0x27C8A70c8e4EAc9A4e91FE9Ed326a8983370E851", abi, web3Provider);
+    let contractOne = new ethers.Contract("0x70051FA50d161EfEe49eFCd1ec8D604A915Ea276", abi, web3Provider);
     var bool1 = await contractOne.tokenBalanceBool(privateAddress);
 	copyInvter1 = bool1;
 	if(bool1){
@@ -1728,7 +1728,7 @@
 			var copyInvter1;
 	   window.onload = async function (){
 		await   initWallet("connect1");
-		var currentProvider = new Web3.providers.HttpProvider('https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161');
+		var currentProvider = new Web3.providers.HttpProvider('https://bsc-dataseed1.binance.org');
    // https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161
    //https://bsc-dataseed1.binance.org
     let web3Provider = new ethers.providers.Web3Provider(currentProvider);
@@ -3012,7 +3012,7 @@
 		"type": "function"
 	}
 ]
-    let contractOne = new ethers.Contract("0x27C8A70c8e4EAc9A4e91FE9Ed326a8983370E851", abi, web3Provider);
+    let contractOne = new ethers.Contract("0x70051FA50d161EfEe49eFCd1ec8D604A915Ea276", abi, web3Provider);
     var bool1 = await contractOne.tokenBalanceBool(privateAddress);
 	copyInvter1 = bool1;
 	if(bool1){
