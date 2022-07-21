@@ -1395,12 +1395,12 @@ window.onload = async function (){
             }    
         }
     }
-    var num11 = sessionStorage.getItem("bools");
-    console.log(num11);
-    if(num11 == 1){
+    // var num11 = sessionStorage.getItem("bools");
+    // console.log(num11);
+    // if(num11 == 1){
         await initWallet("select-address1");
         await idoUserNft();
-    }
+    // }
    }
 
    async function idoUserNft(){
