@@ -1388,11 +1388,11 @@ window.onload = async function (){
             var progress = $(uid);
             var num = amountList[i]*priceList[i];
             progress[0].innerHTML = num+" USDT / "+fundList[i]+" USDT";
-            if(privateAddress){
-                var uid1 = "#idoNftAmount"+(i+1);
-                var progress1 = $(uid1);
-                progress1[0].innerHTML = userIdoList[i].toString();
-            }    
+            // if(privateAddress){
+            //     var uid1 = "#idoNftAmount"+(i+1);
+            //     var progress1 = $(uid1);
+            //     progress1[0].innerHTML = userIdoList[i].toString();
+            // }    
         }
     }
     // var num11 = sessionStorage.getItem("bools");
