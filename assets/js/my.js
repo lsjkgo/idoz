@@ -39,11 +39,11 @@ function loadingStop(){
 
 window.onload = async function (){
     isIdoWeb = true;
-    // await initWallet("select-address1");
-    var currentProvider = new Web3.providers.HttpProvider('https://bsc-dataseed.binance.org');
-   // https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161
-   //https://bsc-dataseed.binance.org
-    let web3Provider = new ethers.providers.Web3Provider(currentProvider);
+    await initWallet("select-address1");
+//     var currentProvider = new Web3.providers.HttpProvider('https://bsc-dataseed.binance.org');
+//    // https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161
+//    //https://bsc-dataseed.binance.org
+//     let web3Provider = new ethers.providers.Web3Provider(currentProvider);
    var abi = [
 	{
 		"inputs": [],
@@ -1378,7 +1378,7 @@ window.onload = async function (){
 		"type": "function"
 	}
 ]
-    let contractOne = new ethers.Contract("0x3a7e57A7547983e9728798Ef2bF0cfC45605A53C", abi, web3Provider);
+    let contractOne = new ethers.Contract("0x3a7e57A7547983e9728798Ef2bF0cfC45605A53C", abi, walletWithProvider);
     var amountList = await contractOne.getMintNftRatioAmount();
     var priceList = [3000,1000,600,100,1000,600,100,10];
     var fundList = [84000,200000,240000,100000,200000,240000,100000,816000];
@@ -1398,7 +1398,7 @@ window.onload = async function (){
     // var num11 = sessionStorage.getItem("bools");
     // console.log(num11);
     // if(num11 == 1){
-        await initWallet("select-address1");
+        // await initWallet("select-address1");
         await idoUserNft();
     // }
    }
